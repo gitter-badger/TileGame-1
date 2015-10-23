@@ -1,0 +1,28 @@
+#container{
+	width: 500px;
+	height: 500px;
+	display: table;
+}
+
+.meta-container{
+	padding-left: 300px;
+}
+
+.row-node {
+	display: table-row;
+}
+
+.tile-node {
+	display:table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-style: double; 
+}
+
+.text-node {
+	min-width:20px;
+}
+
+.placed {
+	background-color: #F0FBF0;
+}

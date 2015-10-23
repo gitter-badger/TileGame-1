@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>canvasExample</title>
+        <meta charset='utf-8' />
+		<link rel="stylesheet" href="main.css"/>
+	</head>
+	<body>
+		<div class="meta-container">
+			<div id="container"></div>
+		</div>
+		<span id="counter"/>
+		<script src="src/Tile.js"></script>
+		<script src="src/TileGame.js"></script>
+		<script>
+			var game = new TileGame("container", 4, 4);
+			game.oncounter(function(c){
+				document.getElementById("counter").innerHTML = c.toString();
+			});
+			game.onwin(function(){
+				alert("Victory");
+			});
+		</script>
+	</body>
+</html>
